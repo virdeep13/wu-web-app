@@ -5,7 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: royalblue;
+
+  
+  h1 {
+    color: goldenrod;
+  }
+
+  .top-left-image {
+    position: absolute;
+    top: 0;           
+    left: 0;          
+    width: 100px;      
+    height: auto;      
+  }
 }
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
