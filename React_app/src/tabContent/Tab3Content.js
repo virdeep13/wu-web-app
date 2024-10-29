@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../Tab3Content.css';
 const Tab3Content = () => {
   return( 
   
@@ -20,7 +20,8 @@ const Tab3Content = () => {
       <div className="organization-card">American Institute of Chemical Engineers</div>
       <div className="organization-card">American Society of Civil Engineers</div>
       <div className="organization-card">Amnesty International</div>
-      
+      <div className = "organization-card">Vir(deep)'s Lonely No Friends Org. (i don`t feel down);</div>
+      <div className = "organization-card">The Passive Agressive Assoc. of America... ):</div>
   </div>
 ;
 
