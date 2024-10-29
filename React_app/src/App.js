@@ -11,11 +11,9 @@ import screenshot from './images/Screenshot 2024-10-22 201804.png';
 
 function App() {
   const tabsData = [
-    { title: 'Tab 1', content: <Tab1Content /> },
-    { title: 'Tab 2', content: <Tab2Content /> },
-    { title: 'Tab 3', content: <Tab3Content /> },
-
-
+    { title: 'News', content: <Tab1Content /> },
+    { title: 'Events', content: <Tab2Content /> },
+    { title: 'Clubs', content: <Tab3Content /> },
   ];
 
 
