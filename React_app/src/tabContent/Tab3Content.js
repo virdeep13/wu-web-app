@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Tab3Content = () => {
-  return <div>Detailed content for Tab 3</div>;
+  return <div>Detailed content for Tab3Content</div>
 };
 
 export default Tab3Content;
