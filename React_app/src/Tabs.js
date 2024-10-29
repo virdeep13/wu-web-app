@@ -11,7 +11,7 @@ const Tabs = ({ tabs }) => {
           <li
             key={index}
             role="tab"
-            tabIndex={0}
+            tabIndex={0} 
             className={activeTab === index ? 'active' : ''}
             onClick={() => setActiveTab(index)}
             onKeyDown={(e) => e.key === 'Enter' && setActiveTab(index)}
