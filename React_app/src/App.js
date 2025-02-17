@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import './App.css';
 import './index.css';
-import Tabs from './Tabs';
 import Tab1Content from './tabContent/Tab1Content'; 
 import Tab2Content from './tabContent/Tab2Content'; 
 import Tab3Content from './tabContent/Tab3Content'; 
 import Tab4Content from './tabContent/Tab4Content'; 
-import screenshot from './images/Screenshot 2024-10-22 201804.png';
+
+// Get the theme dropdown
+const themeSelect = document.getElementById('theme');
+
+// Apply the selected theme
+themeSelect.addEventListener('change', function () {
+  const selectedTheme = themeSelect.value;
+  document.body.className = selectedTheme; // Add the theme class to the body
+});
+
 
 function App() {
   // Step 1: Use React state to track the active tab
@@ -26,9 +34,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Widener Roar</h1>
-      <img src={screenshot} alt="Description" className="top-left-image" />
-
       {/* Step 3: Render Tabs */}
       <div className="tabs">
         {tabsData.map((tab, index) => (
@@ -58,5 +63,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

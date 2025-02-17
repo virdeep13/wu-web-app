@@ -1,0 +1,51 @@
+.News-grid {
+  display: flex;
+justify-content : center;
+align-items : center;
+  gap: 20px;
+}
+
+.News-card1 {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.News-card1 button{
+  background-color: rgb(51, 30, 203);
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1.2em;
+}
+
+.News-card1 a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.News-card1 .content{
+  display: none;
+  position: absolute;
+  background-color: hsl(0, 0%, 95%);
+  min-width: 100px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.News-card1:hover .content{
+  display: block;
+}
+
+.News-card1:hover button{
+  background-color: hsl(0, 0%, 69%);
+}
+
+.News-card1 a:hover{
+  background-color: hsl(0, 0%, 30%)
+}
+
