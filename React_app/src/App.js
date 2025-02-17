@@ -5,6 +5,7 @@ import Tabs from './Tabs';
 import Tab1Content from './tabContent/Tab1Content'; 
 import Tab2Content from './tabContent/Tab2Content'; 
 import Tab3Content from './tabContent/Tab3Content'; 
+import Tab4Content from './tabContent/Tab4Content'; 
 import screenshot from './images/Screenshot 2024-10-22 201804.png';
 
 function App() {
@@ -12,10 +13,10 @@ function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabsData = [
-
     { title: 'News', content: <Tab1Content /> },
     { title: 'Events', content: <Tab2Content /> },
-    { title: 'Clubs', content: <Tab3Content /> },
+    { title: 'Organizations', content: <Tab3Content /> },
+    { title: 'Academics ', content: <Tab4Content /> },
   ];
 
   // Step 2: Handle tab click to set active tab
