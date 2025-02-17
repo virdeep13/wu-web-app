@@ -21,10 +21,14 @@ function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabsData = [
+<<<<<<< HEAD
+    { title: 'Tab 1', content: <Tab1Content /> },
+    { title: 'Tab 2', content: <Tab2Content /> },
+    { title: 'Tab 3', content: <Tab3Content /> },
+=======
     { title: 'News', content: <Tab1Content /> },
     { title: 'Events', content: <Tab2Content /> },
     { title: 'Organizations', content: <Tab3Content /> },
-    { title: 'Academics ', content: <Tab4Content /> },
   ];
 
   // Step 2: Handle tab click to set active tab
