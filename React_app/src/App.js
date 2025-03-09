@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import './index.css';
-import Tab1Content from './tabContent/Tab1Content'; 
-import Tab2Content from './tabContent/Tab2Content'; 
 import Tab3Content from './tabContent/Tab3Content'; 
 import Tab4Content from './tabContent/Tab4Content'; 
 
@@ -15,20 +13,14 @@ themeSelect.addEventListener('change', function () {
   document.body.className = selectedTheme; // Add the theme class to the body
 });
 
-
 function App() {
   // Step 1: Use React state to track the active tab
   const [activeTab, setActiveTab] = useState(0);
 
   const tabsData = [
-<<<<<<< HEAD
-    { title: 'Tab 1', content: <Tab1Content /> },
-    { title: 'Tab 2', content: <Tab2Content /> },
-    { title: 'Tab 3', content: <Tab3Content /> },
-=======
-    { title: 'News', content: <Tab1Content /> },
-    { title: 'Events', content: <Tab2Content /> },
-    { title: 'Organizations', content: <Tab3Content /> },
+  
+    { title: 'Academics' , content: <Tab4Content/>},
+    { title: 'Organizations', content: <Tab3Content /> }
   ];
 
   // Step 2: Handle tab click to set active tab

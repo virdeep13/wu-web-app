@@ -27,11 +27,13 @@ h1 {
 }
 
 .academics-grid {
-  display: flex;
-justify-content : center;
-align-items : center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust minmax values as needed */
   gap: 20px;
+  padding: 20px;
+  text-align: center;
 }
+
 
 .academics-card1 {
   padding: 20px;
