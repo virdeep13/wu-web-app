@@ -3,7 +3,7 @@ import './App.css';
 import './index.css';
 import Tabs from './Tabs';
 import Tab1Content from './tabContent/Tab1Content'; 
-import Tab2Content from './tabContent/Tab2Content'; 
+import EventsTab  from './tabContent/EventsTab'; 
 import Tab3Content from './tabContent/Tab3Content'; 
 import screenshot from './images/Screenshot 2024-10-22 201804.png';
 
@@ -13,7 +13,7 @@ function App() {
 
   const tabsData = [
     { title: 'News', content: <Tab1Content /> },
-    { title: 'Events', content: <Tab2Content /> },
+    { title: 'Events', content: <EventsTab /> },
     { title: 'Organizations', content: <Tab3Content /> },
   ];
 

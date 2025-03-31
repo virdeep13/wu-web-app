@@ -1,0 +1,42 @@
+CourseID,Course Name,Credits,Prerequisites/Concurrent PHYS Lab/Possible CS257 (or 58) Co-req for CS392,Category
+CSCI151,Intro to Computer Science I,4,,Core
+CSCI152,Intro to Computer Science II,4,CSCI151,Core
+CSCI257,Object-Oriented Programming,4,CSCI152,Core
+CSCI258,Data Structures and Algorithms,4,CSCI257,Core
+CSCI264,Comp. Structure & Assembly Language,4,,Core
+CSCI347,Computer Architecture I,3,"CSCI258,CSCI264",Core
+CSCI344,Programming Languages,3,CSCI258,Core
+CSCI373,Software Engineering,3,CSCI258,Core
+CSCI398,Research Topics,1,,Core
+CSCI451,Operating Systems I,3,CSCI258,Core
+CSCI408,Senior Project I,2,CSCI398,Core
+CSCI409,Senior Project II,2,CSCI408,Core
+MATH151,Elementary Discrete Mathematics I,3,,Math
+MATH152,Elementary Discrete Mathematics II,3,MATH151,Math
+MATH141,Calculus I,4,,Math
+MATH142,Calculus II,4,MATH141,Math
+MATH273,Introduction to Probability,3,MATH142,Math
+PHYS111,Physics of Digital Circuits,2,,Physics
+PHYS141,College Physics I,4,,Physics
+PHYS143,College Physics I Lab,1,PHYS141,Physics
+PHYS142,College Physics II,4,PHYS141,Physics
+PHYS144,College Physics II Lab,1,PHYS142,Physics
+PHIL120,Symbolic Logic,3,,Philosophy
+ASC101,Thinking Through,3,,Gen Ed
+ASC401,Transformations Capstone,3,,Gen Ed
+ENGL101,"Reading, Thinking and Writing",3,,Gen Ed
+CSCI391,Practical Cryptology,3,"CSCI151, MATH151, PHIL120",Elective
+CSCI392,Network and Computer Security,3,"CSCI391, CSCI257",Elective
+CSCI348,Computer Architecture II,3,CSCI347,Elective
+CSCI452,OSs II,3,CSCI451,Elective
+CSCI355,Artificial Intelligence I,3,"CSCI258, PHIL120",Elective
+CSCI381,Computer Network I,3,CSCI152,Elective
+CSCI356,Artificial Intelligence II,3,CSCI355,Elective
+CSCI382,Computer Networking II,3,CSCI381,Elective
+CSCI311,Mobile App Development,3,CSCI258,Elective
+CSCI434,Database Systems I,3,CSCI258,Elective
+CSCI435,Database Systems II,3,CSCI434,Elective
+CSCI349,Parallel Computing,3,CSCI258,Elective
+CSCI350,Parallel Computing II,3,CSCI349,Elective
+CSCI371,Computer Graphics (I),3,CSCI258,Elective
+CSCI372,Computer Graphics 2,3,CSCI371,Elective
