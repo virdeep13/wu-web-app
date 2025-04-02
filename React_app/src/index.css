@@ -6,20 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: royalblue;
+  background-color: rgb(14, 62, 208);
 
   
   h1 {
     color: goldenrod;
   }
 
-  .top-left-image {
-    position: absolute;
-    top: 0;           
-    left: 0;          
-    width: 100px;      
-    height: auto;      
-  }
 }
 
 

@@ -5,7 +5,16 @@ import Tabs from './Tabs';
 import Tab1Content from './tabContent/Tab1Content'; 
 import EventsTab  from './tabContent/EventsTab'; 
 import Tab3Content from './tabContent/Tab3Content'; 
-import screenshot from './images/Screenshot 2024-10-22 201804.png';
+import Tab4Content from './tabContent/Tab4Content'; 
+
+// Get the theme dropdown
+const themeSelect = document.getElementById('theme');
+
+// Apply the selected theme
+themeSelect.addEventListener('change', function () {
+  const selectedTheme = themeSelect.value;
+  document.body.className = selectedTheme; // Add the theme class to the body
+});
 
 function App() {
   // Step 1: Use React state to track the active tab
@@ -13,8 +22,10 @@ function App() {
 
   const tabsData = [
     { title: 'News', content: <Tab1Content /> },
-    { title: 'Events', content: <EventsTab /> },
+    { title: 'Events', content: <Tab2Content /> },
     { title: 'Organizations', content: <Tab3Content /> },
+    { title: 'Academics' , content: <Tab4Content/>},
+
   ];
 
   // Step 2: Handle tab click to set active tab
@@ -24,9 +35,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Widener Web App</h1>
-      <img src={screenshot} alt="Description" className="top-left-image" />
-
       {/* Step 3: Render Tabs */}
       <div className="tabs">
         {tabsData.map((tab, index) => (
@@ -56,5 +64,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
