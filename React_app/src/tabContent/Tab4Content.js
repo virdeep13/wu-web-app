@@ -16,7 +16,7 @@ const Tab4Content = () => {
         <button>Arts & Science</button>
         <div class = "content">
             <a href ="http://prof-match.s3-website.us-east-2.amazonaws.com/">Computer Science</a>
-            <a href ="https://www.alsfamilyfarms.com/?srsltid=AfmBOoq7Cj4OUnAcMrMonDc4eWxTIZ4-c5-MtWEQr9w_4bNQ1cTEsLBN">Orange</a>
+            <a href ="http://computer_science.com/">Orange</a>
             <a href ="https://miamifruit.org/collections/banana-pre-orders?srsltid=AfmBOop4p0jLLTyGZ-5LWXCgEqKS2P6pq5tVWsH-uv2ZCseuknEh6_Uh">Banana</a>
         </div>
     </div>
@@ -50,7 +50,7 @@ const Tab4Content = () => {
     </div>
 
       <div className="academics-card5">
-      <button>Engineering</button>
+      <button>Nursing</button>
         <div class = "content">
             <e href ="">Apple</e>
             <e href ="">Orange</e>
