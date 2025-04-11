@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import './index.css';
 import Tabs from './Tabs';
+import Tab1Content from './tabContent/Tab1Content'; 
 import EventsTab  from './tabContent/EventsTab'; 
 import Tab3Content from './tabContent/Tab3Content'; 
 import Tab4Content from './tabContent/Tab4Content'; 
@@ -20,9 +21,10 @@ function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabsData = [
-    { title: 'Academics' , content: <Tab4Content/>},
+    { title: 'News', content: <Tab1Content /> },
+    { title: 'Events', content: <Tab2Content /> },
     { title: 'Organizations', content: <Tab3Content /> },
-    { title: 'Events', content: <EventsTab /> },
+    { title: 'Academics' , content: <Tab4Content/>},
 
   ];
 
