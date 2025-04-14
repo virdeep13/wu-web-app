@@ -32,10 +32,10 @@ function App() {
   // Step 2: Handle tab click to set active tab
   const handleTabClick = (index) => {
     setActiveTab(index);
-  };
+  }; 
 
 return (
-
+ 
   <div className="App">
 
     <h1>Widener Web App</h1>
