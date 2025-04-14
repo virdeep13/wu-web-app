@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
 import './index.css';
+<<<<<<< HEAD
+import Tabs from './Tabs';
+import Tab1Content from './tabContent/Tab1Content'; 
+=======
 //import Tabs from './Tabs';
 //import Tab1Content from './tabContent/Tab1Content'; 
+>>>>>>> d3a0a413f1f1175954cde33e563d8b0e3b9ed696
 import EventsTab  from './tabContent/EventsTab'; 
 import Tab3Content from './tabContent/Tab3Content'; 
 import Tab4Content from './tabContent/Tab4Content'; 
@@ -21,11 +26,12 @@ function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabsData = [
+    { title: 'News', content: <Tab1Content /> },
+    { title: 'Events', content: <Tab2Content /> },
     //{ title: 'News', content: <Tab1Content /> },
     { title: 'Events', content: <EventsTab /> },
     { title: 'Organizations', content: <Tab3Content /> },
     { title: 'Academics' , content: <Tab4Content/>},
-    { title: 'Events', content: <EventsTab /> },
 
   ];
 
