@@ -21,8 +21,8 @@ function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabsData = [
-    { title: 'News', content: <Tab1Content /> },
-    { title: 'Events', content: <Tab2Content /> },
+    //{ title: 'News', content: <Tab1Content /> },
+    //{ title: 'Events', content: <EventsTab /> },
     //{ title: 'News', content: <Tab1Content /> },
     { title: 'Events', content: <EventsTab /> },
     { title: 'Organizations', content: <Tab3Content /> },
