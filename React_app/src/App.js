@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import './index.css';
-//import Tabs from './Tabs';
-//import Tab1Content from './tabContent/Tab1Content'; 
+import './styles.css'; 
 import EventsTab  from './tabContent/EventsTab'; 
 import Tab3Content from './tabContent/Tab3Content'; 
 import Tab4Content from './tabContent/Tab4Content'; 
