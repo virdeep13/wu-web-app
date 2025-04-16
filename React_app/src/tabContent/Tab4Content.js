@@ -15,7 +15,7 @@ const Tab4Content = () => {
     <div className="academics-card1">
         <button>Arts & Science</button>
         <div class = "content">
-            <a href ="http://prof-match.s3-website.us-east-2.amazonaws.com/">Computer Science</a>
+            <a href ="https://d3223bbf7ikyj9.cloudfront.net/">Computer Science</a>
             <a href ="https://www.alsfamilyfarms.com/?srsltid=AfmBOoq7Cj4OUnAcMrMonDc4eWxTIZ4-c5-MtWEQr9w_4bNQ1cTEsLBN">Orange</a>
             <a href ="https://miamifruit.org/collections/banana-pre-orders?srsltid=AfmBOop4p0jLLTyGZ-5LWXCgEqKS2P6pq5tVWsH-uv2ZCseuknEh6_Uh">Banana</a>
         </div>

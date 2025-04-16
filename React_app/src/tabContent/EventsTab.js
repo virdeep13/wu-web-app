@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Tabs from '../Tabs';
 
 //const Tab2Content = () => {
   //const nestedTabsData = [
