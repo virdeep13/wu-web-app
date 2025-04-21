@@ -1,32 +1,60 @@
-import React from 'react';
-import '../Tab3Content.css';
+import React from "react";
+import "../Tab4Content.css";
 const Tab3Content = () => {
-  return( 
-  
+  return (
     <div className="tab3-container">
-    <h1>Organizations</h1>
-    <div className="search-bar">
-      <input type="text" placeholder="Search Organizations" />
-      <button>Categories</button>
-      <button>Options</button>
+      <h1>Choose your Professor</h1>
+
+      <div class="academics-grid">
+        <div className="academics-card1">
+          <button>Arts & Science</button>
+          <div class="content">
+            <a href="https://d3223bbf7ikyj9.cloudfront.net/">
+              Computer Science
+            </a>
+            <a href=" ">Digital Media Informatics</a>
+            <a href=" ">Communication Studies</a>
+            <a href=" ">Communication Studies</a>
+          </div>
+        </div>
+
+        <div className="academics-card2">
+          <button>Health & Human Services</button>
+          <div class="content">
+            <b href="">Apple</b>
+            <b href="">Orange</b>
+            <b href="">Banana</b>
+          </div>
+        </div>
+
+        <div className="academics-card3">
+          <button>Business</button>
+          <div class="content">
+            <c href="">Apple</c>
+            <c href="">Orange</c>
+            <c href="">Banana</c>
+          </div>
+        </div>
+
+        <div className="academics-card4">
+          <button>Engineering</button>
+          <div class="content">
+            <d href="">Apple</d>
+            <d href="">Orange</d>
+            <d href="">Banana</d>
+          </div>
+        </div>
+
+        <div className="academics-card5">
+          <button>Nursing</button>
+          <div class="content">
+            <e href="">Apple</e>
+            <e href="">Orange</e>
+            <e href="">Banana</e>
+          </div>
+        </div>
+      </div>
     </div>
-    <div className="organization-grid">
-      <div className="organization-card">Active Minds</div>
-      <div className="organization-card">African Culture And Excellence (ACE)</div>
-      <div className="organization-card">Alpha Kappa Alpha Sorority, Inc. (AKA)</div>
-      <div className="organization-card">Alpha Omega Epsilon (AOE)</div>
-      <div className="organization-card">Alpha Phi Omega (APO)</div>
-      <div className="organization-card">Alpha Tau Omega (ATO)</div>
-      <div className="organization-card">American Institute of Chemical Engineers</div>
-      <div className="organization-card">American Society of Civil Engineers</div>
-      <div className="organization-card">Amnesty International</div>
-      <div className = "organization-card">Virdeep's Lonely No Friends Org. (i don`t feel down);</div>
-      <div className = "organization-card">The Passive Aggressive Assoc. of America... ):</div>
-  </div>
-;
-
-
-</div>
   );
 };
 export default Tab3Content;
