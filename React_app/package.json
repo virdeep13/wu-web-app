@@ -17,10 +17,14 @@
     "x": "^0.1.2"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts start"
+
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
+
