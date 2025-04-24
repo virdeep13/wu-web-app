@@ -3,7 +3,7 @@ import "../Academics.css";
 const Professor = () => {
   return (
     <div className="Academics-container">
-      <h1>Professor</h1>
+      <h1>Choose your Professor</h1>
       <div class="academics-grid">
         {/* First button */}
         <div className="academics-dropdown">
