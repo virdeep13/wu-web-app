@@ -3,8 +3,8 @@ import "./App.css";
 import "./index.css";
 import "./styles.css";
 import EventsTab from "./tabContent/EventsTab";
-import Tab3Content from "./tabContent/Tab3Content";
-import Tab4Content from "./tabContent/Tab4Content";
+import Professor from "./tabContent/Professor";
+import Academics from "./tabContent/Academics";
 
 // Get the theme dropdown
 const themeSelect = document.getElementById("theme");
@@ -20,12 +20,9 @@ function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabsData = [
-    //{ title: 'News', content: <Tab1Content /> },
-    // { title: 'Events', content: <Tab2Content /> },
-    //{ title: 'News', content: <Tab1Content /> },
+    { title: "Academics", content: <Academics /> },
     { title: "Events", content: <EventsTab /> },
-    { title: "Choose your Professor", content: <Tab3Content /> },
-    { title: "Academics", content: <Tab4Content /> },
+    { title: "Choose your Professor", content: <Professor /> },
   ];
 
   // Step 2: Handle tab click to set active tab
@@ -47,6 +44,7 @@ function App() {
             onClick={() => handleTabClick(index)}
             data-tab-target={`#${index}`}
           >
+            
             {tab.title}
           </button>
         ))}

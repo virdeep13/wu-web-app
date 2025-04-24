@@ -1,0 +1,76 @@
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.academics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust minmax values as needed */
+  padding: 20px;
+  text-align: center;
+}
+
+.academics-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn{
+  height: 100px;
+  padding: 0;
+  width: 180px;
+}
+
+.academics-dropdown .dropbtn {
+  background-color: rgb(51, 30, 203);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1.2em;
+}
+
+.navbar a:hover, .academics-dropdown:hover .dropbtn {
+  background-color: hsl(240, 5%, 25%);
+}
+
+.dropdown-one {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  background-color: hsl(0, 0%, 95%);
+  min-width: 160px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+  top: 100%; /* Position it right below the button */
+  left: 0;   /* Align with the left edge of the button */
+  margin-top: 0; /* Remove any margin */
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.dropdown-two {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 160px;
+  top: 0;
+  min-width: 160px;
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.academics-dropdown:hover .dropdown-one, #link1:hover > .dropdown-two {
+  display: block;
+}
+
+.dropdown-one .dItem {
+  color: black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0; /* Remove any margin */
+}
+
+.dropdown-one .dItem:hover, .dropdown-two .dItem:hover {
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+}

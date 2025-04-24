@@ -2,10 +2,9 @@
   text-align: center;
 }
 
-h1{
+h1 {
   font-size: 100rem;
 }
-
 
 .App-logo {
   height: 40vmin;
@@ -16,17 +15,6 @@ h1{
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -44,71 +32,31 @@ h1{
 
 [data-tab-content] {
   display: none;
-
 }
-.active[data-tab-content]{
+.active[data-tab-content] {
   display: block;
 }
 
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.3s, color 0.3s;
+.tabs {
+  height: 100px;
+  display: flex;
+  justify-content: center;
 }
-
-/* Banner Styles */
-.banner {
+.tabs button {
+  background-color: #1039ba;
   color: white;
-  text-align: center;
-  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  height: 50px;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 1rem;
 }
 
-.banner img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
-/* Content Styles */
-.content {
-  padding: 20px;
-  text-align: center;
-}
-
-.content img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
-/* Dark Theme */
-body.dark {
-  background-color: #333;
-  background-color: #333;
-  color: #fff;
-}
-
-body.dark .settings {
-  background-color: #444;
-}
-/* Settings Styles */
-.settings {
-  padding: 20px;
-  background-color: #f4f4f4;
-  margin: 20px;
-  border-radius: 8px;
-}
-
-/* Footer Styles */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
+.tabs button:hover {
+  transform: scale(1.05);
+  background-color: #85a0fa;
 }
