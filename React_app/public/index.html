@@ -3,40 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Web Page</title>
+    <title>Widener Roar</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Banner Section -->
-    <header class="banner">
-      <h1>Welcome to Widener Roar</h1>
-      <img
-        src="https://www.widener.edu/sites/default/files/2019-07/widenerpride_full_stacked_2935c.jpg"
-        alt="Boo"
-      />
-    </header>
+    <div class="page-container page-load">
+      <!-- Banner Section with improved styling -->
+      <header class="banner">
+        <h1 class="header-text">Welcome to Widener Roar</h1>
+        <div class="logo-container">
+          <img src="widenerLogo1.svg" alt="Widener Pride Logo" class="logo" />
+        </div>
+      </header>
 
-    <!-- Main Content Section -->
-    <main>
-      <div id="root"></div>
+      <!-- Main Content Section -->
+      <main>
+        <div id="root" class="main-content"></div>
+        <section class="settings">
+          <div>
+            <h2>Settings</h2>
+          <label for="theme">Choose a theme:</label>
+          <select id="theme" class="nav-button">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+          </div>
+          
+        </section>
+      </main>
 
-      <!-- Settings Section -->
-      <section class="settings">
-        <h2>Settings</h2>
-        <label for="theme">Choose a theme:</label>
-        <select id="theme">
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Widener Roar</p>
-      <p>I have no clue if this works</p>
-    </footer>
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 Widener Roar</p>
+        <p>I have no clue if this works</p>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
+    <script>
+      // Simple script to add animation effects when event items are loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        const eventItems = document.querySelectorAll(".event-item");
+        eventItems.forEach((item, index) => {
+          item.style.animationDelay = `${index * 0.1}s`;
+        });
+      });
+    </script>
+
+    <script>
+      document
+        .querySelector(".settings-button")
+        .addEventListener("click", () => {
+          document.body.classList.toggle("dark");
+        });
+    </script>
   </body>
 </html>

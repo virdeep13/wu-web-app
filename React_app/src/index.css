@@ -1,23 +1,172 @@
+/* Base styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  background-color: rgb(14, 62, 208);
-
-  
-  h1 {
-    color: goldenrod;
-  }
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
+/* Page container with vignette effect */
+.page-container {
+  background: radial-gradient(circle, rgba(16,57,186,1) 70%, rgba(12,43,143,1) 100%);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* 1. Improved text contrast for headers */
+.header-text {
+  color: #E6A817; /* Darker amber gold for better contrast */
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+  text-align: center;
+  margin: 15px 0;
+}
 
+/* Banner styling */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 2. Logo padding improvement */
+.logo-container {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 15px 0;
+  max-width: 700px;
+  border-radius: 1em;
+}
+
+.logo {
+  width: 1040px;
+  height: auto;
+  filter: invert();
+}
+
+/* Main content area */
+main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 4. Content boxes with shadow */
+.main-content {
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 15px 0;
+  width: 90%;
+  max-width: 1000px;
+  min-height: 1080px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  background-color: #fff;
+  max-width: 1000px;
+  border-radius: 8px;
+}
+
+.settings{
+  text-align: left;
+  margin-top: 20px;
+  width: 1040px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.settings div{
+  padding-left: 25px;
+}
+
+/* 8. Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.page-load {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.event-item {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes pulseEffect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.primary-button {
+  animation: pulseEffect 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navigation-bar {
+    flex-direction: column;
+    padding: 8px;
+  }
+  
+  .logo-container {
+    padding: 15px;
+  }
+}
+/* Dark Theme */
+/* DARK MODE OVERRIDES */
+
+body.dark {
+  background: radial-gradient(circle, rgba(20, 20, 20, 1) 70%, rgba(10, 10, 10, 1) 100%);
+  color: #f0f0f0;
+}
+
+body.dark .page-container {
+  background: none; /* Let body background show */
+}
+
+body.dark .main-content,
+body.dark .navigation-bar,
+body.dark .logo-container {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.6);
+}
+
+body.dark .nav-button {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+body.dark .nav-button:hover {
+  background-color: #666;
+}
+
+body.dark .event-item {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark .settings-button {
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+body.dark .settings-button:hover {
+  background-color: rgba(255,255,255,0.2);
 }
